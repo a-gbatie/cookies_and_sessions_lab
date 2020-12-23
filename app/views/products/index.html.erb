@@ -1,0 +1,9 @@
+<%= cart.each do |p| %> 
+    <h3> <%= p %> </h3>
+<% end %>
+
+
+<%= form_for :products do |f| %>
+    Item: <%= f.text_field :products %>
+    <%= f.submit "Add to Cart" %>
+<% end %>
